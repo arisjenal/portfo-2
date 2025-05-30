@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden scroll-smooth transition-all">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="public/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="icon" href="src/img/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Header Section Start -->
+        <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+            <div class="container">
+                <div class="flex items-center justify-between relative">
+                    <div class="px-5 lg:-mt-1">
+                        <a href="#home" class="font-bold text-[1.5rem] lg:text-[2rem] text-dark block py-7" data-aos="fade" data-aos-duration="500">
+                            <span class="dark:text-white">A</span><span class="text-primary">R</span>
+                        </a>
+                    </div>
+                    <div class="flex items-center px-4">
+                        <button id="hamburger" name="hamburger" type="submit" class="block absolute right-4 bg-primary px-2 py-1 rounded-lg lg:hidden" data-aos="fade" data-aos-duration="2000">
+                            <span class="hamburger-link origin-top-left"></span>
+                            <span class="hamburger-link"></span>
+                            <span class="hamburger-link origin-bottom-left"></span>
+                        </button>
+
+                        <div class="lg:hidden px-20 -ml-5" data-aos="fade" data-aos-duration="2000">
+                            <span id="sunSM">
+                                <i class='bx bx-sun bx-md mt-1 cursor-pointer'></i>
+                            </span>
+                            <span class="hidden" id="moonSM"><i class='bx bx-moon bx-md text-white mt-1 cursor-pointer'></i></span>
+                        </div>
+                        <nav id="nav-menu" class="hidden absolute py-5 shadow-lg bg-white dark:bg-[#18181B] lg:dark:bg-dark lg:dark:bg-transparent rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                            <ul class="block lg:flex">
+                                <li class="group">
+                                    <a href="#home" class="list" data-aos="fade-down" data-aos-duration="1000">Beranda</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#about" class="list" data-aos="fade-down" data-aos-duration="900">Tentang Saya</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#project" class="list" data-aos="fade-down" data-aos-duration="800">Project</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#sertifikat" class="list" data-aos="fade-down" data-aos-duration="700">Sertifikat</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#pendidikan" class="list" data-aos="fade-down" data-aos-duration="700">Pendidikan</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#contact" class="list" data-aos="fade-down" data-aos-duration="600">Kontak Saya</a>
+                                </li>
+                               <li>
+                                <div data-aos="fade-down" data-aos-duration="500" class="hidden lg:block">
+                                    <span id="sun"><i class='bx bx-sun bx-md mt-1 cursor-pointer'></i></span>
+                                    <span class="hidden text-white" id="moon"><i class='bx bx-moon bx-md mt-1 cursor-pointer'></i></span>
+                                </div>
+                               </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Start -->
+        <section id="home" class="pt-[110px] lg:pt-[135px] dark:bg-dark">
+            <div class="container">
+                <div class="flex flex-wrap">
+                    <div class="w-full self-center px-5 lg:w-1/2 -mt-4 pb-6">
+                        <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua👋🏻, saya <span class="font-bold block text-dark dark:text-white text-4xl lg:text-5xl mb-2 mt-2" id="data">Aris Jenal</span></h1>
+
+                        <h2 class="font-medium text-slate-600 dark:text-slate-400 text-lg mb-2 lg:text-2xl">Junior Web Developer</h2>
+
+                        <!-- <p class="w-max font-medium text-secondary dark:text-zinc-200 mb-8 leading-relaxed lg:text-lg italic">"Once you stop learning, you start dying"<span class="font-bold dark:text-zinc-400 block not-italic lg:inline"> - Albert Einsten</span></p> -->
+
+                        <!-- <a href="https://drive.google.com/file/d/1zMGdXei7Q_xmlrV4kOLfOefil4W5Bivx/view?usp=sharing" target="_blank" class="animate-fadeUp text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-90 transition-all ease-in-out duration-300 lg:text-lg">Download CV</a> -->
+                    </div>
+
+                    <div class="w-full self-end px-4 lg:w-1/2 lg:-mt-8 lg:mb-14 lg:right-0 animate-fade animate-ease-linear animate-duration-[1500ms]">
+                        <div class="-ml-4 relative lg:animate-wiggleUp">
+                            <img src="src/img/ar3.png" alt="ar" width="250" class="max-w-96 mx-auto -mb-12 lg:w-[450px]" />
+                            <span class="absolute -bottom-16 -z-10 left-1/2 -translate-x-1/2 lg:mx-auto">
+                                <svg width="300" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#8DD8FF" d="M38,-54.9C50.1,-43.4,61.5,-33.6,69.8,-19.9C78,-6.2,83.1,11.2,78.1,25C73.1,38.8,58.1,49,43.4,60C28.7,71,14.3,82.7,-1.7,85.1C-17.8,87.5,-35.6,80.5,-47.2,68.6C-58.8,56.6,-64,39.5,-65.2,24C-66.4,8.4,-63.6,-5.6,-59.1,-19.2C-54.7,-32.7,-48.7,-45.8,-38.6,-57.9C-28.5,-70,-14.2,-81.2,-0.7,-80.3C12.9,-79.4,25.8,-66.4,38,-54.9Z" transform="translate(100 100)" />
+                                </svg>
+                                <img src="src/img/her2.png" alt="" class="absolute -top-1 -ml-5 w-[120px] lg:w-[200px] lg:-ml-28 lg:-mt-2 animate-wiggle-1.5s">
+                                <!-- <img src="src/img/her1.png" alt="" class="absolute w-[150px] -rotate-45 bottom-3 -ml-6 lg:-bottom-1 lg:-ml-20 lg:w-[200px] animate-wiggle-2s"> -->
+                                <img src="src/img/her3.png" alt="" class="-z-[9999] absolute w-[190px] rotate-45 top-16 lg:top-10 -right-[60px] lg:w-[320px] lg:-right-40 animate-wiggle-2.5s">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+        <section id="about" class="pt-[126px] lg:pt-[200px] pb-32 dark:bg-dark">
+            <div class="container">
+                <div class="flex flex-wrap">
+                    <div class="w-full px-4 mb-10 lg:w-1/2">
+                        <h4 class="font-bold uppercase text-primary text-lg mb-3" data-aos="fade-right" data-aos-duration="500">Tentang Saya</h4>
+                        <h2 class="font-bold text-dark dark:text-white text-3xl mb-3 max-w-sm lg:text-4xl" data-aos="fade-right" data-aos-duration="800">Yuk kenalan, tak kenal maka tak sayang</h2>
+                        <p class="font-medium text-base text-secondary dark:text-gray-400 max-w-xl lg:text-lg " data-aos="fade-right" data-aos-duration="1100">Saya pribadi yang aktif, memiliki keingintahuan tinggi, suka belajar hal baru, mampu memecahkan masalah, aktif dalam bekerja sama dengan tim, dan seorang yang pekerja keras.</p>
+                        <p class="font-medium text-base text-secondary dark:text-gray-400 max-w-xl lg:text-lg" data-aos="fade-right" data-aos-duration="1400">Saya seorang Junior Web Developer yang penuh semangat dalam hal mempelajari teknologi web yang dibutuhkan agar masalah dapat terselesaikan, Saya berusaha memberikan pengalaman pengguna yang menarik dan fungsional.</p>
+                    </div>
+
+                    <div class="w-full px-4 lg:w-1/2">
+                        <h3 class="font-semibold text-dark dark:text-white text-xl lg:text-xl lg:pt-10 animate-fadeLeft-500" data-aos="fade-left" data-aos-duration="500">Yuk Mutualan</h3>
+                        <h2 class="font-bold text-dark dark:text-white text-2xl mb-2 max-w-sm lg:text-3xl animate-fadeLeft-800" data-aos="fade-left" data-aos-duration="800">Ayo ngobrol bareng!</h2>
+                        <p class="font-medium text-base text-secondary dark:text-gray-400 mb-6 lg:text-lg animate-fadeLeft-1.1" data-aos="fade-left" data-aos-duration="1100">Jangan sungkan untuk berteman dengan saya, kamu bisa kapan saja menghubungi saya melalui platform dibawah ini.
+                        </p>
+                        <div class="flex items-center animate-fadeLeft-1.5">
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/_arisjenal/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 dark:text-white border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="500">
+                               <i class='bx bxl-instagram bx-tada bx-sm'></i>
+                            </a>
+                            <!-- Youtube -->
+                            <!-- <a href="https://www.youtube.com/channel/UC-BujEvH7Fe7oZOosPmuOPQ" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 dark:text-white border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="600">
+                                <i class='bx bxl-youtube bx-tada bx-sm'></i>
+                            </a> -->
+                             <!-- Github -->
+                             <a href="https://github.com/arisjenal" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 dark:text-white border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="700">
+                                <i class='bx bxl-github bx-tada bx-sm'></i>
+                             </a>
+                             <!-- Linkedin -->
+                             <!-- <a href="https://www.linkedin.com/in/nathanael-christian-siboro-636331283/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 dark:text-white border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="800">
+                                <i class='bx bxl-linkedin bx-tada bx-sm'></i>
+                             </a> -->
+                             <!-- Gmail -->
+                             <a href="mailto:arisjenal04@gmail.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 dark:text-white border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="900">
+                                <i class='bx bxl-gmail bx-tada bx-sm'></i>
+                             </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="class-skill">
+                <h4 class="font-bold uppercase text-primary text-lg mb-3" data-aos="fade-right" data-aos-duration="500">Skill</h4>
+                <div class="flex items-center animate-fadeLeft-1.5">
+                    <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 dark:text-white border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="500">
+                        <img src="src/img/html.png" style="width: 22px; heigth: 22px;">
+                    </a>
+                    <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 dark:text-white border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="500">
+                        <img src="src/img/CSS3.png" style="width: 21px; heigth: 21px;">
+                    </a>
+                    <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 dark:text-white border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="500">
+                        <img src="src/img/js.png" style="width: 19px; heigth: 19px;">
+                    </a>
+                    <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 dark:text-white border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="500">
+                        <img src="src/img/laravel.png" style="width: 25px; heigth: 25px;">
+                    </a>
+                    <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-400 dark:text-white border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300" data-aos="fade-up" data-aos-duration="500">
+                        <img src="src/img/tailwind_.png" style="width: 28px; heigth: 28px;">
+                    </a>
+                </div>
+            </div>
+            </div>
+            
+        </section>
+    <!-- About Section End -->
+
+    <!-- Project Section Start -->
+        <svg class="dark:bg-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F1F5F9" class="dark:fill-zinc-900" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <section id="project" class="pt-28 pb-16 bg-slate-100 dark:bg-zinc-900">
+            <div class="container">
+                <div class="w-full px-4" data-aos="fade-down" data-aos-duration="500">
+                    <div class="max-w-xl mx-auto text-center mb-16">
+                        <h4 class="font-semibold text-lg text-primary mb-2 uppercase">Projek</h4>
+                        <h2 class="font-bold text-dark dark:text-white text-3xl mb-4">Kumpulan Projek Saya</h2>
+                        <!-- <p class="font-medium text-secondary dark:text-gray-400 leading-normal">Setiap Projek yang saya bagikan dibawah ini mewakili komitmen saya dalam mempelajari suatu teknologi sehingga dapat menciptakan suatu solusi yang inovatif dan berdampak. -->
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full px-4 flex flex-wrap justify-center lg:px-0">
+                    <div class="mb-12 lg:mb-16 lg:w-[40%]" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-zinc-800 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
+                            <a href="https://naelyo.github.io/My-Portfolio/" target="_blank">
+                                <div
+                                class="relative h-full -mt-6 overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 cursor-pointer transition-all duration-700 hover:scale-[.98] group">
+                                <img
+                                  src="src/img/portfolio/portfolio1.JPG"
+                                  alt="card-image" class="group-hover:scale-110 transition-all duration-700">
+                              </div>
+                            </a>
+                            <div class="p-4">
+                              <h5 class="block mb-2 font-sans text-xl font-bold leading-snug text-dark dark:text-white">Portfolio 1</h5>
+                              <p class="block text-base text-dark dark:text-white font-light lg:font-[400] leading-relaxed text-inherit lg:tracking-wide">
+                                Ini adalah website portfolio pertama saya.
+                              </p>
+                            </div>
+                            <div class="px-3 mt-1 pb-4 dark:text-white">
+                                <i class='bx bxl-html5 bx-md hover:text-html transition-all duration-300 cursor-pointer'></i>  
+                                <i class='bx bxl-css3 bx-md hover:text-css transition-all duration-300 cursor-pointer'></i>  
+                                <i class='bx bxl-javascript bx-md hover:text-javascript transition-all duration-300 cursor-pointer'></i>
+                                <!-- <i class='bx bxl-bootstrap bx-md hover:text-bootstrap transition-all duration-300 cursor-pointer'></i>
+                                <i class='bx bxl-javascript bx-md hover:text-javascript transition-all duration-300 cursor-pointer'></i>
+                                <i class='bx bxl-jquery bx-md hover:text-jquery transition-all duration-300 cursor-pointer'></i> -->
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="mb-12 lg:mb-16" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-zinc-800 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
+                            <a href="https://naelyo.github.io/CSS-Portfolio/" target="">
+                                <div
+                                class="relative h-full -mt-6 overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 cursor-pointer transition-all duration-700 hover:scale-[.98] group">
+                                <img
+                                  src="src/img/portfolio/portfolio.JPG"
+                                  alt="card-image" class="group-hover:scale-110 transition-all duration-700">
+                              </div>
+                            </a>
+                            <div class="p-4">
+                              <h5 class="block mb-2 font-sans text-xl font-bold leading-snug text-dark dark:text-white">Portfolio 2</h5>
+                              <p class="block text-base text-dark dark:text-white font-light leading-relaxed text-inherit lg:tracking-wide lg:font-[400]">
+                                Ini adalah website portfolio kedua saya.
+                              </p>
+                            </div>
+                            <div class="px-3 mt-1 pb-4 dark:text-white">
+                                <i class='bx bxl-html5 bx-md hover:text-html transition-all duration-300 cursor-pointer'></i>  
+                                <i class='bx bxl-css3 bx-md hover:text-css transition-all duration-300 cursor-pointer'></i>
+                                <i class='bx bxl-javascript bx-md hover:text-javascript transition-all duration-300 cursor-pointer'></i>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="mb-12 lg:mb-16 lg:w-[40%]" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-zinc-800 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
+                            <a href="https://arr-game.netlify.app/" target="_blank">
+                                <div
+                                class="relative h-full -mt-6 overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 cursor-pointer transition-all duration-700 hover:scale-[.98] group">
+                                <img
+                                  src="src/img/portfolio/argame.JPG"
+                                  alt="card-image" class="group-hover:scale-110 transition-all duration-700">
+                              </div>
+                            </a>
+                            <div class="p-4">
+                              <h5 class="block mb-2 font-sans text-xl font-bold leading-snug text-dark dark:text-white">AR Game</h5>
+                              <p class="block text-base text-dark font-light leading-relaxed text-inherit lg:tracking-wide lg:font-[400] dark:text-white">
+                                AR GAME adalah sebuah website yang dirancang untuk main game, yang terdiri tiga game yaitu Baku, Catur, Kecepatan. Game yang seru melatih pola pikir, kecepatan tangan dalam mengetik.
+                              </p>
+                            </div>
+                            <div class="px-3 mt-1 pb-4 dark:text-white">
+                                <i class='bx bxl-html5 bx-md hover:text-html transition-all duration-300 cursor-pointer'></i>  
+                                <i class='bx bxl-css3 bx-md hover:text-css transition-all duration-300 cursor-pointer'></i>
+                                <i class='bx bxl-javascript bx-md hover:text-javascript transition-all duration-300 cursor-pointer'></i>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="mb-12 lg:mb-16" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-zinc-800 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
+                            <a href="https://brit-jasa.netlify.app/" target="_blank">
+                                <div
+                                class="relative h-full -mt-6 overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 cursor-pointer transition-all duration-700 hover:scale-[.98] group">
+                                <img
+                                  src="src/img/portfolio/brit.JPG"
+                                  alt="card-image" class="group-hover:scale-110 transition-all duration-700">
+                              </div>
+                            </a>
+                            <div class="p-4">
+                              <h5 class="block mb-2 font-sans text-xl font-bold leading-snug text-dark dark:text-white">Brit Jasa</h5>
+                              <p class="block text-base text-dark font-light leading-relaxed text-inherit lg:tracking-wide lg:font-[400] dark:text-white">
+                                Brit Jasa adalah penyedia layanan profesional yang berdedikasi untuk membantu bisnis Anda berkembang melalui solusi inovatif dan berorientasi pelanggan.
+                              </p>
+                            </div>
+                            <div class="px-3 mt-1 pb-4 dark:text-white">
+                                <!-- <i class='bx bxl-github bx-md hover:text-github transition-all duration-300 cursor-pointer'></i>
+                                <i class='bx bxl-javascript bx-md hover:text-javascript transition-all duration-300 cursor-pointer'></i> -->
+                                <i class='bx bxl-html5 bx-md hover:text-html transition-all duration-300 cursor-pointer'></i>  
+                                <i class='bx bxl-css3 bx-md hover:text-css transition-all duration-300 cursor-pointer'></i>
+                                <i class='bx bxl-javascript bx-md hover:text-javascript transition-all duration-300 cursor-pointer'></i>
+                            </div>
+                        </div>  
+                    </div>
+                    <!-- <div class="mb-12 lg:mb-16" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-zinc-800 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
+                            <a href="https://naelyo.github.io/Rak-buku/" target="_blank">
+                                <div
+                                class="relative h-full -mt-6 overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 cursor-pointer transition-all duration-700 hover:scale-[.98] group">
+                                <img
+                                  src="src/img/portfolio/port-5.png"
+                                  alt="card-image" class="group-hover:scale-110 transition-all duration-700">
+                              </div>
+                            </a>
+                            <div class="p-4">
+                              <h5 class="block mb-2 font-sans text-xl font-bold leading-snug text-dark dark:text-white">Rak Buku</h5>
+                              <p class="block text-base text-dark font-light leading-relaxed text-inherit lg:tracking-wide lg:font-[400] dark:text-white">
+                                Website ini merupakan todo-apps untuk menyimpan daftar buku yang sudah dibaca dan belum.
+                              </p>
+                            </div>
+                            <div class="px-3 mt-1 pb-4 dark:text-white">
+                                <i class='bx bxl-html5 bx-md hover:text-html transition-all duration-300 cursor-pointer'></i>  
+                                <i class='bx bxl-css3 bx-md hover:text-css transition-all duration-300 cursor-pointer'></i>
+                                <i class='bx bxl-javascript bx-md hover:text-javascript transition-all duration-300 cursor-pointer'></i>
+                            </div>
+                        </div>  
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <svg class="dark:bg-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F1F5F9" class="dark:fill-zinc-900" fill-opacity="1" d="M0,64L48,85.3C96,107,192,149,288,186.7C384,224,480,256,576,250.7C672,245,768,203,864,192C960,181,1056,203,1152,202.7C1248,203,1344,181,1392,170.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    <!-- Project Section End -->
+
+    <!-- Sertifikat Section Start -->
+        <section id="sertifikat" class="pt-28 pb-28 dark:bg-dark">
+            <div class="container">
+                <div class="w-full px-4" data-aos="fade-down" data-aos-duration="500">
+                    <div class="max-w-xl mx-auto text-center mb-16">
+                        <h4 class="font-semibold text-lg text-primary mb-2 uppercase">Sertifikat dan Piagam</h4>
+                        <h2 class="font-bold text-dark dark:text-white text-3xl mb-4">Kumpulan Sertifikat dan Piagam Saya</h2>
+                        <!-- <p class="font-medium text-secondary dark:text-gray-400 leading-normal">Setiap project yang saya bagikan dibawah ini mewakili komitmen saya dalam mempelajari suatu teknologi sehingga dapat menciptakan suatu solusi yang inovatif dan berdampak.
+                        </p> -->
+                    </div>
+                </div>
+                <div class="w-full px-4 flex flex-wrap justify-center lg:px-0">
+                    <div class="mb-12 lg:mb-16 lg:w-[40%]" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-zinc-800 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
+                            <!-- <a href="" target="_blank"> -->
+                                <div
+                                class="relative h-full -mt-6 overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 cursor-pointer transition-all duration-700 hover:scale-[.98] group">
+                                <img
+                                  src="src/img/kotlin.JPG"
+                                  alt="card-image" class="group-hover:scale-110 transition-all duration-700">
+                              </div>
+                            </a>
+                            <div class="p-4">
+                              <h5 class="block mb-2 font-sans text-xl font-bold leading-snug text-dark dark:text-white">Sertifikat Memulai Pemrograman dengan Kotlin</h5>
+                              <!-- <p class="block text-base text-dark dark:text-white font-light lg:font-[400] leading-relaxed text-inherit lg:tracking-wide">
+                                Sertifikat Memulai Pemrograman dengan Kotlin.
+                              </p> -->
+                            </div>
+                            <!-- <div class="px-3 mt-1 pb-4 dark:text-white">
+                                <i class='bx bxl-html5 bx-md hover:text-html transition-all duration-300 cursor-pointer'></i>  
+                                <i class='bx bxl-css3 bx-md hover:text-css transition-all duration-300 cursor-pointer'></i>  
+                                <i class='bx bxl-bootstrap bx-md hover:text-bootstrap transition-all duration-300 cursor-pointer'></i>
+                                <i class='bx bxl-javascript bx-md hover:text-javascript transition-all duration-300 cursor-pointer'></i>
+                                <i class='bx bxl-jquery bx-md hover:text-jquery transition-all duration-300 cursor-pointer'></i>
+                            </div> -->
+                        </div>  
+                    </div>
+                    <div class="mb-12 lg:mb-16" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-zinc-800 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
+                            <!-- <a href="" target=""> -->
+                                <div
+                                class="relative h-full -mt-6 overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 cursor-pointer transition-all duration-700 hover:scale-[.98] group">
+                                <img
+                                  src="src/img/python.JPG"
+                                  alt="card-image" class="group-hover:scale-110 transition-all duration-700">
+                              </div>
+                            </a>
+                            <div class="p-4">
+                              <h5 class="block mb-2 font-sans text-xl font-bold leading-snug text-dark dark:text-white">Python Fundamental for Data Sciene</h5>
+                              <!-- <p class="block text-base text-dark dark:text-white font-light leading-relaxed text-inherit lg:tracking-wide lg:font-[400]">
+                                Website ini adalah web portfolio kedua saya, yang saya buat menggunakan tema desain hitam putih
+                              </p> -->
+                            </div>
+                            <!-- <div class="px-3 mt-1 pb-4 dark:text-white">
+                                <i class='bx bxl-html5 bx-md hover:text-html transition-all duration-300 cursor-pointer'></i>  
+                                <i class='bx bxl-css3 bx-md hover:text-css transition-all duration-300 cursor-pointer'></i>
+                                <i class='bx bxl-javascript bx-md hover:text-javascript transition-all duration-300 cursor-pointer'></i>
+                            </div> -->
+                        </div>  
+                    </div>
+                    <div class="mb-12 lg:mb-16 lg:w-[40%]" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-zinc-800 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
+                            <!-- <a href="" target="_blank"> -->
+                                <div
+                                class="relative h-full -mt-6 overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 cursor-pointer transition-all duration-700 hover:scale-[.98] group">
+                                <img
+                                  src="src/img/r.JPG"
+                                  alt="card-image" class="group-hover:scale-110 transition-all duration-700">
+                              </div>
+                            </a>
+                            <div class="p-4">
+                              <h5 class="block mb-2 font-sans text-xl font-bold leading-snug text-dark dark:text-white">R Fundamental for Data Sciene</h5>
+                              <!-- <p class="block text-base text-dark font-light leading-relaxed text-inherit lg:tracking-wide lg:font-[400] dark:text-white">
+                                Website ini adalah website e-commerce sederhana yang saya buat, dengan tema produk korek api
+                              </p> -->
+                            </div>
+                            <!-- <div class="px-3 mt-1 pb-4 dark:text-white">
+                                <i class='bx bxl-html5 bx-md hover:text-html transition-all duration-300 cursor-pointer'></i>  
+                                <i class='bx bxl-css3 bx-md hover:text-css transition-all duration-300 cursor-pointer'></i>
+                                <i class='bx bxl-javascript bx-md hover:text-javascript transition-all duration-300 cursor-pointer'></i>
+                            </div> -->
+                        </div>  
+                    </div>
+                    <div class="mb-12 lg:mb-16" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-zinc-800 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
+                            <!-- <a href="" target="_blank"> -->
+                                <div
+                                class="relative h-full -mt-6 overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 cursor-pointer transition-all duration-700 hover:scale-[.98] group">
+                                <img
+                                  src="src/img/iamokey.jpg"
+                                  alt="card-image" class="group-hover:scale-110 transition-all duration-700">
+                              </div>
+                            </a>
+                            <div class="p-4">
+                              <h5 class="block mb-2 font-sans text-xl font-bold leading-snug text-dark dark:text-white">Cross Section Training I'm Okay</h5>
+                              <!-- <p class="block text-base text-dark font-light leading-relaxed text-inherit lg:tracking-wide lg:font-[400] dark:text-white">
+                                Repository github saya yang berisi pembelajaran tentang bahasa pemograman JavaScript.
+                              </p> -->
+                            </div>
+                            <!-- <div class="px-3 mt-1 pb-4 dark:text-white">
+                                <i class='bx bxl-github bx-md hover:text-github transition-all duration-300 cursor-pointer'></i>
+                                <i class='bx bxl-javascript bx-md hover:text-javascript transition-all duration-300 cursor-pointer'></i>
+                            </div> -->
+                        </div>  
+                    </div>
+                    <div class="mb-12 lg:mb-16" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="relative flex flex-col mt-2 text-gray-700 bg-white dark:bg-zinc-800 shadow-md bg-clip-border rounded-xl w-[20rem] lg:w-[450px] px-4">
+                            <!-- <a href="" target="_blank"> -->
+                                <div
+                                class="relative h-full -mt-6 overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40 cursor-pointer transition-all duration-700 hover:scale-[.98] group">
+                                <img
+                                  src="src/img/pemasaran.JPG"
+                                  alt="card-image" class="group-hover:scale-110 transition-all duration-700">
+                              </div>
+                            </a>
+                            <div class="p-4">
+                              <h5 class="block mb-2 font-sans text-xl font-bold leading-snug text-dark dark:text-white">Pemasaran Digital Dasar</h5>
+                              <!-- <p class="block text-base text-dark font-light leading-relaxed text-inherit lg:tracking-wide lg:font-[400] dark:text-white">
+                                Website ini merupakan todo-apps untuk menyimpan daftar buku yang sudah dibaca dan belum.
+                              </p> -->
+                            </div>
+                            <!-- <div class="px-3 mt-1 pb-4 dark:text-white">
+                                <i class='bx bxl-html5 bx-md hover:text-html transition-all duration-300 cursor-pointer'></i>  
+                                <i class='bx bxl-css3 bx-md hover:text-css transition-all duration-300 cursor-pointer'></i>
+                                <i class='bx bxl-javascript bx-md hover:text-javascript transition-all duration-300 cursor-pointer'></i>
+                            </div> -->
+                        </div>  
+                    </div>
+                </div>
+                <!-- <div class="lg:w-[30%] mx-auto px-4">
+                    <h4 class="font-bold text-[16px] lg:text-[18px] text-primary mb-4 uppercase" data-aos="fade" data-aos-duration="500">Pengalaman</h4>
+                    <ol class="relative border-s border-gray-200 dark:border-gray-700 lg:w-[400px]">                  
+                        <li class="mb-10 ms-4" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900">
+                            </div>
+                            <time class="mb-2 text-[12px] lg:text-[14px] font-normal leading-none text-white bg-amber-400 rounded-full px-2 py-[1px] border border-amber-600">Maret 2024 - Juni 2024</time>
+                            <h3 class="text-lg lg:text-[20px] mt-1 font-bold text-dark dark:text-white">Jabar Digital Academy</h3>
+                            <h4 class="text-[12px] lg:text-[14px] mb-1 font-bold text-dark dark:text-white">Front End Web Development</h4>
+                            <ol class="text-[14px] lg:text-[16px] text-secondary dark:text-slate-400 list-disc ms-4">
+                                <li>Membuat Website Paling Sederhana menggunakan HTML dan CSS</li>
+                                <li>Mempelajari Fundamental JavaScript (Struktur Data, Function, OOP dan DLL)</li>
+                                <li>Membuat dan Menangani DOM dalam Sebuah Website</li>
+                            </ol>
+                        </li>
+                        <li class="mb-10 ms-4" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900">
+                            </div>
+                            <time class="mb-2 text-[12px] lg:text-[14px] font-normal leading-none text-white bg-amber-400 rounded-full px-2 py-[1px] border border-amber-600">Maret 2024 - Sekarang</time>
+                            <h3 class="text-lg lg:text-[20px] mb-1 mt-1 font-bold text-dark dark:text-white">AWS Back-End Academy</h3>
+                            <h4 class="text-[12px] lg:text-[14px] mb-1 font-bold text-dark dark:text-white">Back End Development</h4>
+                            <ol class="text-[14px] lg:text-[16px] text-secondary dark:text-slate-400 list-disc ms-4">
+                                <li>Membangun RESTful API dengan menggunakan teknologi Node JS</li>
+                                <li>Mempelajari Cloud Computing yang sederhana</li>
+                                <li>Membuat RESTful sederhana yang mendukung fungsionalitas aplikasi</li>
+                            </ol>
+                        </li>
+                        <li class="mb-10 ms-4" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900">
+                            </div>
+                            <time class="mb-2 text-[12px] lg:text-[14px] font-normal leading-none text-white bg-amber-400 rounded-full px-2 py-[1px] border border-amber-600">Maret 2023 - Juni 2023</time>
+                            <h3 class="text-lg lg:text-[20px] mb-1 mt-1 font-bold text-dark dark:text-white">PT Sugity Creatives</h3>
+                            <h4 class="text-[12px] lg:text-[14px] mb-1 font-bold text-dark dark:text-white">PC Delivery</h4>
+                            <ol class="text-[14px] lg:text-[16px] text-secondary dark:text-slate-400 list-disc ms-4">
+                                <li>Membuat Bira Problem dan Checksheet</li>
+                                <li>Update SOD (Shipping Operation Diagram) Collecting </li>
+                                <li>Membuat Information Board Charger Electric Forklift</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div> -->
+            </div>
+        </section>
+    <!-- Sertifikat Section End -->
+
+    <!-- Resume Section Start -->
+        <svg class="dark:bg-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F1F5F9" class="dark:fill-zinc-900" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <section id="pendidikan" class="pt-28 pb-16 bg-slate-100 dark:bg-zinc-900">
+            <div class="container">
+                <div class="max-w-xl px-4 mx-auto text-center mb-12" data-aos="fade-up" data-aos-duration="500">
+                    <h4 class="font-semibold text-lg text-primary mb-2 uppercase">Pendidikan</h4>
+                    <!-- <h2 class="font-bold text-dark dark:text-white text-3xl mb-4">Pendidikan Saya</h2> -->
+                </div>
+                <div class="lg:w-[30%] mx-auto px-4">
+                    <h4 class="font-bold text-[16px] lg:text-[18px] text-primary mb-4 uppercase" data-aos="fade" data-aos-duration="500">Jenjang Pendidikan</h4>
+                    <ol class="relative border-s border-gray-200 dark:border-gray-700">                  
+                        <li class="mb-10 ms-4" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900">
+                            </div>
+                            <time class="mb-2 text-[12px] lg:text-[14px] font-normal leading-none text-white bg-amber-400 rounded-full px-2 py-[1px] border border-amber-600">Juli 2017 - Mei 2019</time>
+                            <h3 class="text-lg lg:text-[20px] mb-1 mt-1 font-bold text-dark dark:text-white">SMK Muhammadiyah 11 Sibuluan Indah</h3>
+                            <ol class="text-[14px] lg:text-[16px] text-secondary dark:text-slate-400 list-disc ms-4">
+                                <li>Teknik Komputer dan Jaringan</li>
+                                <!-- <li>Jaringan</li>
+                                <li>Database</li>
+                                <li>Troubleshooting</li> -->
+                            </ol>
+                            <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900"></div>
+                            <time class="mb-1 text-sm font-normal leading-none text-white dark:text-dark">.</time>
+                        </li>
+                    </ol>
+
+                    <ol class="relative border-s border-gray-200 dark:border-gray-700">                  
+                        <li class="mb-10 ms-4" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900">
+                            </div>
+                            <time class="mb-2 text-[12px] lg:text-[14px] font-normal leading-none text-white bg-amber-400 rounded-full px-2 py-[1px] border border-amber-600">2021 - Sekarang</time>
+                            <h3 class="text-lg lg:text-[20px] mb-1 mt-1 font-bold text-dark dark:text-white">Universitas Muhammadiyah Tapanuli Selatan</h3>
+                            <ol class="text-[14px] lg:text-[16px] text-secondary dark:text-slate-400 list-disc ms-4">
+                                <li>Teknologi Informasi</li>
+                                <!-- <li>Jaringan</li>
+                                <li>Database</li>
+                                <li>Troubleshooting</li> -->
+                            </ol>
+                            <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900"></div>
+                            <time class="mb-1 text-sm font-normal leading-none text-white dark:text-dark">.</time>
+                        </li>
+                    </ol>
+                </div>
+                <!-- <div class="lg:w-[30%] mx-auto px-4">
+                    <h4 class="font-bold text-[16px] lg:text-[18px] text-primary mb-4 uppercase" data-aos="fade" data-aos-duration="500">Pengalaman</h4>
+                    <ol class="relative border-s border-gray-200 dark:border-gray-700 lg:w-[400px]">                  
+                        <li class="mb-10 ms-4" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900">
+                            </div>
+                            <time class="mb-2 text-[12px] lg:text-[14px] font-normal leading-none text-white bg-amber-400 rounded-full px-2 py-[1px] border border-amber-600">Maret 2024 - Juni 2024</time>
+                            <h3 class="text-lg lg:text-[20px] mt-1 font-bold text-dark dark:text-white">Jabar Digital Academy</h3>
+                            <h4 class="text-[12px] lg:text-[14px] mb-1 font-bold text-dark dark:text-white">Front End Web Development</h4>
+                            <ol class="text-[14px] lg:text-[16px] text-secondary dark:text-slate-400 list-disc ms-4">
+                                <li>Membuat Website Paling Sederhana menggunakan HTML dan CSS</li>
+                                <li>Mempelajari Fundamental JavaScript (Struktur Data, Function, OOP dan DLL)</li>
+                                <li>Membuat dan Menangani DOM dalam Sebuah Website</li>
+                            </ol>
+                        </li>
+                        <li class="mb-10 ms-4" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900">
+                            </div>
+                            <time class="mb-2 text-[12px] lg:text-[14px] font-normal leading-none text-white bg-amber-400 rounded-full px-2 py-[1px] border border-amber-600">Maret 2024 - Sekarang</time>
+                            <h3 class="text-lg lg:text-[20px] mb-1 mt-1 font-bold text-dark dark:text-white">AWS Back-End Academy</h3>
+                            <h4 class="text-[12px] lg:text-[14px] mb-1 font-bold text-dark dark:text-white">Back End Development</h4>
+                            <ol class="text-[14px] lg:text-[16px] text-secondary dark:text-slate-400 list-disc ms-4">
+                                <li>Membangun RESTful API dengan menggunakan teknologi Node JS</li>
+                                <li>Mempelajari Cloud Computing yang sederhana</li>
+                                <li>Membuat RESTful sederhana yang mendukung fungsionalitas aplikasi</li>
+                            </ol>
+                        </li>
+                        <li class="mb-10 ms-4" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="absolute w-3 h-3 bg-primary rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900">
+                            </div>
+                            <time class="mb-2 text-[12px] lg:text-[14px] font-normal leading-none text-white bg-amber-400 rounded-full px-2 py-[1px] border border-amber-600">Maret 2023 - Juni 2023</time>
+                            <h3 class="text-lg lg:text-[20px] mb-1 mt-1 font-bold text-dark dark:text-white">PT Sugity Creatives</h3>
+                            <h4 class="text-[12px] lg:text-[14px] mb-1 font-bold text-dark dark:text-white">PC Delivery</h4>
+                            <ol class="text-[14px] lg:text-[16px] text-secondary dark:text-slate-400 list-disc ms-4">
+                                <li>Membuat Bira Problem dan Checksheet</li>
+                                <li>Update SOD (Shipping Operation Diagram) Collecting </li>
+                                <li>Membuat Information Board Charger Electric Forklift</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div> -->
+            </div>
+        </section>
+        <svg class="dark:bg-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F1F5F9" class="dark:fill-zinc-900" fill-opacity="1" d="M0,64L48,85.3C96,107,192,149,288,186.7C384,224,480,256,576,250.7C672,245,768,203,864,192C960,181,1056,203,1152,202.7C1248,203,1344,181,1392,170.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    <!-- Resume Section End -->
+
+    <!-- Contact Section Start -->
+        <section id="contact" class="lg:pt-24 pt-[90px] pb-36 dark:bg-dark">
+            <div class="container">
+                <div class="max-w-xl px-4 mx-auto text-center mb-5">
+                    <h4 class="font-semibold text-lg text-primary uppercase">Kontak Saya</h4>
+                </div>
+                <div>
+                    <div class="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-white dark:bg-zinc-800 shadow-lg rounded-md text-dark">
+                        <div>
+                            <h1 class="text-3xl font-bold dark:text-white">Ayo Bicara</h1>
+                            <p class="text-sm text-secondary mt-3 leading-normal dark:text-slate-400">Kamu ingin membuat website? Hubungi saya, saya akan membuat website kamu, setelah kita tau bahannya.</p>
+                            <div class="mt-12">
+                                <h2 class="text-lg font-bold dark:text-white">Email</h2>
+                                <ul class="mt-3">
+                                    <li class="flex items-center">
+                                        <div class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                                            <i class='bx bx-envelope bx-sm'></i>
+                                        </div>
+                                        <a target="blank" href="mailto:arisjenal04@gmail.com" class="text-primary text-sm ml-3">
+                                            <p class="font-semibold tracking-wide">arisjenal04@gmail.com</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-12">
+                                <h2 class="text-lg font-semibold dark:text-white">Sosial</h2>
+                                <ul class="flex mt-3">
+                                    <li> 
+                                        <a href="https://www.instagram.com/_arisjenal/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-dark dark:text-white border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300">
+                                            <i class='bx bxl-instagram bx-sm'></i>
+                                         </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/arisjenal" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-dark dark:text-white border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300">
+                                            <i class='bx bxl-github bx-sm'></i>
+                                         </a>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="https://www.linkedin.com/in/nathanael-christian-siboro-636331283/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-dark dark:text-white border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300">
+                                            <i class='bx bxl-linkedin bx-sm'></i>
+                                         </a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                      
+                        <form class="space-y-4">
+                            <input type='text' placeholder='Nama'
+                                class="w-full rounded-md py-2.5 px-4 border text-sm outline-primary dark:outline-dark" />
+                            <input type='email' placeholder='Email'
+                                class="w-full rounded-md py-2.5 px-4 border text-sm outline-primary dark:outline-dark" />
+                            <input type='text' placeholder='Subjek'
+                                class="w-full rounded-md py-2.5 px-4 border text-sm outline-primary dark:outline-dark" />
+                            <textarea placeholder='Pesan' rows="6"
+                                class="w-full rounded-md px-4 border text-sm pt-2.5 outline-primary dark:outline-dark"></textarea>
+                            <button type='button'
+                                class="text-white bg-primary hover:opacity-90 transition-all ease-in-out duration-300 font-semibold rounded-md text-sm px-4 py-2.5 w-full">Kirim</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+        <footer class="relative w-full border-t dark:border-dark pt-12 transition duration-300 ease-in-out opacity-90 lg:pt-20 dark:bg-dark">
+            <div class="absolute inset-x-0 top-4 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl">
+                <div class="aspect-[1500/632] w-[69.25rem] flex-none bg-gradient-to-r from-amber-600 to-amber-800 opacity-25 block" style="clip-path:polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 62.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 3.4% 51.1%, 21.4% 69.9%, 58.9% 0.2%, 73.6% 51.7%)"></div>
+            </div>
+            <div class="mx-auto max-w-7xl px-6 pb-8 lg:px-8">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+                    <div class="space-y-2">
+                        <a href="#home" class="font-bold text-[2rem] lg:text-[3rem] text-dark block">
+                            <span class="dark:text-white">A</span><span class="text-primary">R</span>
+                        </a>
+                        <h3 class="mb-2 text-lg font-bold text-dark dark:text-white">Hubungi Saya</h3>
+                        <a href="mailto:naelcristian31@gmail.com" target="_blank" class="text-secondary dark:text-slate-400 hover:text-primary">
+                            <span>arisjenal04@gmail.com</span>
+                        </a>
+                        <div class="flex gap-x-1">
+                            <a href="https://www.instagram.com/_arisjenal/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-500 border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300">
+                                <i class='bx bxl-instagram bx-sm'></i>
+                            </a>
+                            <!-- Github -->
+                            <a href="https://github.com/arisjenal" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-500 border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300">
+                                <i class='bx bxl-github bx-sm'></i>
+                            </a>
+                            <!-- Linkedin -->
+                            <!-- <a href="https://www.linkedin.com/in/nathanael-christian-siboro-636331283/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-500 border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300">
+                                <i class='bx bxl-linkedin bx-sm'></i>
+                            </a> -->
+                            <!-- Gmail -->
+                            <a href="mailto:arisjenal04@gmail.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-500 border-slate-400 hover:border-primary hover:bg-primary hover:shadow-lg hover:text-white transition duration-300">
+                                <i class='bx bxl-gmail bx-sm'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:mt-0">
+                        <div class="gap-8">
+                            <div>
+                                <h3 class="leading text-xl font-bold text-dark dark:text-white">Tautan</h3>
+                                <ul role="list" class="mt-6 space-y-4">
+                                    <li>
+                                        <a class="text-base leading-6 hover:text-primary dark:text-secondary dark:hover:text-primary" href="#home">Beranda</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-base leading-6 hover:text-primary dark:text-secondary dark:hover:text-primary" href="#about">Tentang Saya</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-base leading-6 hover:text-primary dark:text-secondary dark:hover:text-primary" href="#portfolio">Portfolio</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-base leading-6 hover:text-primary dark:text-secondary dark:hover:text-primary" href="#resume">Resume</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-base leading-6 hover:text-primary dark:text-secondary dark:hover:text-primary" href="#contact">Kontak Saya</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="gap-8">
+                            <div>
+                                <h3 class="leading text-xl font-bold text-dark dark:text-white">Tag</h3>
+                                <ul role="list" class="mt-6 space-y-4">
+                                    <li>
+                                        <a class="text-base leading-6 hover:text-primary dark:text-secondary dark:hover:text-primary" href="">Programming</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-base leading-6 hover:text-primary dark:text-secondary dark:hover:text-primary" href="">Web</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-base leading-6 hover:text-primary dark:text-secondary dark:hover:text-primary" href="">Teknologi</a>
+                                    </li>
+                                    <li>
+                                        <a class="text-base leading-6 hover:text-primary dark:text-secondary dark:hover:text-primary" href="">Github</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-16 flex items-center justify-center border-t border-dark pt-8 border-white/10 sm:mt-20 lg:mt-24">
+                    <p class="text-dark dark:text-white text-xs leading-5">© Copyright 2025 Aris Jenal. All rights reserved</p>
+                </div>
+                <p class="text-center text-sm font-medium text-dark dark:text-white mt-2">
+                    Build with <span class="text-pink-500">❤️</span>
+                    by
+                    <!-- -->
+                    <a href="https://github.com/arisjenal" target="_blank" class="font-bold text-primary hover:text-primary/80">Aris Jenal</a>
+                </p>
+            </div>
+        </footer>
+    <!-- Footer Section End -->
+
+    <!-- Back To Top -->
+     <a href="#home" id="toTop" class="hidden">
+        <div class="rounded-full fixed bottom-5 right-5 lg:right-10 cursor-pointer">
+            <span class="mx-auto text-[2rem] z-[9999]">
+            <i class='bx bxs-up-arrow-circle bx-lg animate-fadeUp text-dark dark:text-white'></i>
+            </span>
+        </div>
+    </a>
+    <script src="public/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
